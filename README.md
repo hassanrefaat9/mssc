@@ -2,7 +2,7 @@
 Multiple Spring Security Configuration
 
 ```java
-   @Bean
+    @Bean
     @Order(1)
     SecurityFilterChain apiSecurityFilterChain(HttpSecurity http) throws Exception {
         return http
@@ -15,7 +15,7 @@ Multiple Spring Security Configuration
                 .build();
     }
 
- @Bean
+    @Bean
     @Order(2)
     SecurityFilterChain H2ConsoleSecurityFilterChain(HttpSecurity http) throws Exception {
         return http
